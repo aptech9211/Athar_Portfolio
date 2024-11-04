@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Athar Hussain - Web Developer Portfolio</title>
+  <style>
+    /* Reset some default styles */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 60px 20px;
+    }
+
+    .profile-container {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+    }
+
+    .profile-image {
+        flex: 0 0 200px;
+        margin-right: 40px;
+    }
+
+    .profile-image img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .profile-info h1 {
+        color: #007bff;
+        margin-bottom: 10px;
+    }
+
+    .profile-info p {
+        margin-bottom: 15px;
+    }
+
+    .profile-info h2 {
+        color: #007bff;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .profile-info ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .profile-info li {
+        margin-bottom: 10px;
+    }
+
+    header {
+        background-color: #007bff;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav li {
+        margin: 0 15px;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    nav a:hover {
+        color: #ffdd57;
+    }
+
+    main {
+        padding: 40px 20px;
+        max-width: 800px;
+        margin: auto;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+        color: #007bff;
+    }
+
+    .contact-form {
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        transition: border-color 0.3s;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+        border-color: #007bff;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+    .contact-form button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .contact-form button:hover {
+        background-color: #0056b3;
+        transform: translateY(-2px);
+    }
+
+    .error-message {
+        color: red;
+        font-size: 14px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            padding: 30px 20px;
+        }
+
+        .profile-container {
+            flex-direction: column;
+            padding: 30px;
+        }
+
+        .profile-image {
+            flex: 0 0 150px;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+        .profile-image img {
+            max-width: 150px;
+        }
+
+        header {
+            padding: 15px;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .contact-form {
+            padding: 15px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        nav ul {
+            flex-direction: column;
+        }
+
+        nav li {
+            margin: 5px 0;
+        }
+    }
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="working.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Page -->
+<main class="d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="Athar.png" alt="Muhammad Athar Hussain" class="img-fluid rounded-circle mb-4">
+      </div>
+      <div class="col-md-8">
+        <h1>Muhammad Athar Hussain</h1>
+        <p>Web Development | Web Applications</p>
+        <p>+923 222407267</p>
+        <p>athershah1076@gmail.com</p>
+        <p>Karachi, Pakistan</p>
+
+        <h2>Profile Summary</h2>
+        <p>I am skilled in front-end technologies like HTML, CSS, and JavaScript, along with backend expertise in PHP and the Laravel framework. Proficient in MySQL database management, with experience in web development. Adept at creating responsive, user-centric websites and applications that deliver both high performance and intuitive design, ensuring seamless functionality from concept to deployment.</p>
+
+        <h2>Key Competencies</h2>
+        <ul>
+          <li>HTML, CSS</li>
+          <li>JavaScript</li>
+          <li>Python Programming</li>
+          <li>PHP, Laravel</li>
+          <li>MySQL</li>
+          <li>Relational Database Management System</li>
+          <li>Basic knowledge Odoo ERP</li>
+        </ul>
+
+<section>
+  <h2>Work Experience</h2>
+  <p>May 2022 – April 2023 Office Assistant – Grow International Pvt. Ltd.</p>
+  <ul>
+    <li>Perform Data Entry tasks and record management</li>
+    <li>Assist different teams in delivering various assignments</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Professional Certifications</h2>
+  <ul>
+    <li>Search Engine Optimization (SEO) : Aptech Learning Center</li>
+    <li>CPISM : Aptech Learning Center : 75% (Distinction)</li>
+    <li>DISM : Aptech Learning Center : 83% (Distinction)</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Academic Education</h2>
+  <ul>
+    <li>Advance Diploma in Software Engineering : Aptech Learning Center : August 2022 - Present</li>
+    <li>Intermediate in Pre-Engineering (F.Sc) : BIEK : 2025</li>
+    <li>Matriculation in Science (SSC) : BSEK : 2022</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Workshops</h2>
+  <ul>
+    <li>React JS from Aptech Learning Center</li>
+    <li>WordPress from Aptech Learning Center</li>
+    <li>Search Engine Optimization from Enablers</li>
+    <li>Artificial Intelligence from Enablers</li>
+    <li>Shopify from Enablers</li>
+  </ul>
+</section>
+
+<footer>
+  <p>&copy; 2023 Muhammad Athar Hussain. All rights reserved.</p>
+</footer>
+</div>
+</div>
+</div>
+</main>
+
+
+  <!-- Contact Page -->
+  <main>
+    <section>
+      <h1>Get in Touch</h1>
+      <form class="contact-form">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Muhammad Athar Hussain. All rights reserved.</p>
+  </footer>
+
+  <!-- Add your custom JavaScript here -->
+  <script>
+    // Add any necessary JavaScript functionality here
+    // For example, you can add form validation or other interactive features
+  </script>
+</body>
+</html>
